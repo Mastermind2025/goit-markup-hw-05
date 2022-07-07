@@ -25,7 +25,7 @@
         <a class="main-logo" href="./index.html"><span>Web</span>Studio</a>
         <nav class="nav-studio">
             <ul class="navigation">
-                <li class="navigation-item"><a href="index.html">Студия</a></li>
+                <li class="navigation-item"><a href="index.html" class="studia">Студия</a></li>
                 <li class="navigation-item"><a href="./portfolio.html">Портфолио</a></li>
                 <li class="navigation-item"><a href="#">Контакты</a></li>
             </ul>
@@ -59,7 +59,7 @@
             <div class="container container-effective-solutions">
 <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
 
-            <button type="button">Заказать услугу</button>
+            <button type="button" data-modal-open>Заказать услугу</button>              <!-- button -->
             </div>
         </section>
       
@@ -114,9 +114,34 @@
             <div class="container container-what-we-do">
 <h2 class="what-we-do-title">Чем мы занимаемся</h2>
             <ul class="what-we-do">
-                <li><img src="./images/ha1.jpg" width="370" alt="Лептоп и айфон"></li>
-                <li><img src="./images/ha2.jpg" width="370" alt="Руки на клавиатуре"></li>
-                <li><img src="./images/ha3.jpg" width="370" alt="Цветовая модель"></li>
+                <li>
+                    <div class="what-we-do-block">
+                        <img src="./images/ha1.jpg" width="370" alt="Лептоп и айфон">
+                        <div class="what-we-do-desktop">
+                            <p>Десктопные приложения</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="what-we-do-block">
+                        <img src="./images/ha2.jpg" width="370" alt="Лептоп и айфон">
+                        <div class="what-we-do-desktop">
+                            <p>Мобильные приложения</p>
+                        </div>
+                    </div>
+                
+                </li>
+
+                <li>
+                    <div class="what-we-do-block">
+                        <img src="./images/ha3.jpg" width="370" alt="Лептоп и айфон">
+                        <div class="what-we-do-desktop">
+                            <p>Дизайнерские решения</p>
+                        </div>
+                    </div>
+                </li>
+
             </ul>
             </div>
             <!-- container -->
@@ -353,7 +378,6 @@
                                 </svg>
                             </a>
                         </li>
-
                 </ul>
 
             </div>
@@ -414,14 +438,27 @@
         
         </div>
        
+    </div>
+            <!-- container in footer-->
+
+
+</footer>
+                                                                <!-- modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <p></p>
+
+        <button type="button" data-modal-close>
+            <svg class="icon-close" aria-hidden="true" width="32" height="32">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
 
     </div>
 
-    
-    
-    <!-- container in footer-->
-</footer>
 
-
+</div>
+                                                        <!--  this is script -->
+<script src="./js/modal.js"></script>              
  </body>
 </html>
