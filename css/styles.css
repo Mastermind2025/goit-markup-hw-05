@@ -401,8 +401,10 @@ div.what-we-do-desktop p{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white);
+    font-weight: 700;
     text-align: center;
+
+    color: var(--white);
 }
 
 section.our-people-section-for-background{
